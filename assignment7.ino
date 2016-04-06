@@ -32,7 +32,7 @@ void loop() {
   folkracer.updateMotors();
   unsigned long distance = encoderLeft.getDistance();
   distance = distance + encoderRight.getDistance();
-  -  distance = distance / 2;
+  distance = distance / 2;
   if (distance > 20) {
     if (distance < 30) {
       if (state1Done == false) {
